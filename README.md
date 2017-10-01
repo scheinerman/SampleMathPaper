@@ -10,7 +10,7 @@ It's probably necessary to read a LaTeX tutorial before getting
 started. But then I hope you'll find it useful to have this paper as
 an example of how certain things are done in LaTeX.
 
-To typeset the paper on your own, you'll need to give the following sequence of 
+To typeset the paper on your own, you'll need to give the following sequence of
 commands:
 ```
 pdflatex paper
@@ -18,3 +18,8 @@ pdflatex paper
 bibtext paper
 pdflatex paper
 ```
+
+## Multichoose
+
+See also the enclosed file `multichoose.tex` (and its output) to see how
+to typeset the multichoose notation.

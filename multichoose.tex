@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\multichoose}[2]{\left(\!\binom{#1}{#2}\!\right)}
+\newcommand{\bigmultichoose}[2]{\left(\!\!{\binom{#1}{#2}}\!\!\right)}
+
+\begin{document}
+
+The following \LaTeX\ macros create commands for typesetting
+the multichoose symbol:
+\begin{verbatim}
+\newcommand{\multichoose}[2]{\left(\!\binom{#1}{#2}\!\right)}
+\newcommand{\bigmultichoose}[2]{\left(\!\!{\binom{#1}{#2}}\!\!\right)}
+\end{verbatim}
+Note that the \verb|\left| and \verb|\right| macros come from the
+\verb|amsmath| package, so be sure to include
+\verb|\usepackage{amsmath}| in your preamble. The macro \verb|\!| is a
+``negative thin space'' that closes up the gap between the outer set
+of parentheses and the binomial coefficient.
+
+\begin{itemize}
+\item Use the \verb|\multichoose| command for inline mathematics,
+  e.g., $\multichoose{n}{k} = \binom{n+k-1}{k}$.
+
+\item Use the \verb|\bigmultichoose| command for displayed
+  mathematics:
+  \[
+  \sum_{k=0}^n \bigmultichoose{n}{k} .
+  \]
+\end{itemize}
+
+
+
+\end{document}
